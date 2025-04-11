@@ -21,10 +21,9 @@
 
 /******** GENERAL SETTINGS SECTION START ********/
 
-
-
 html,
 body {
+	
     height: 100%;
 }
 #particlesjs1 {
@@ -52,6 +51,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 } 
 
+.table-responsive, .flip-card, .list-group{
+	font-family: 'Montserrat', sans-serif !important;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -72,10 +75,11 @@ p {
 
 .title {
     margin: 0;
-    font-size: 10pt;
+    font-size: 12pt;
     letter-spacing: 2pt;
     color: #1b1b1b;
     text-transform: uppercase; 
+	font-weight:bold;
 }
 
 .line {
@@ -1115,7 +1119,7 @@ a:hover {
 
 .swiper-wrapper .review-text {
     padding: 15px 0; 
-    font-size: 12pt;
+    font-size: 10pt;
     font-weight: 300;
     letter-spacing: 2pt;
     color: #000;
@@ -1125,7 +1129,7 @@ a:hover {
 
 .review-italic {
 	text-decoration: italic;
-	font-size: 12pt;
+	font-size: 10pt;
 }
 
 .swiper-wrapper h4 {
@@ -1398,6 +1402,19 @@ footer h4 {
             .project-wrapper p {
                 font-size: 12pt;
             }
+			.swiper-wrapper .review-text {
+   
+    font-size: 8pt;
+    font-weight: 100;
+    letter-spacing: 2pt;
+    color: #000;
+    line-height: 18pt;
+   
+}
+.review-italic {
+	text-decoration: italic;
+	font-size: 8pt;
+}
         }
 
 .gallery .col-md-3 {
