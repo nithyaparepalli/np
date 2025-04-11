@@ -1,0 +1,435 @@
+.textformatting p {
+	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+  display: inline;
+  margin: 0; /* Optional: Removes the default margin for p tags */
+  letter-spacing: 0.5px; /* Adjust letter spacing for readability */
+  line-height: 2; /* Adjust line height for better visual clarity */
+  text-align: left;
+}
+
+.textformatting a {
+	
+	color: inherit; /* Inherits text color from parent */
+    text-decoration: none; /* Removes underline */
+	font-weight: bold;
+}
+.img-caption{font-size: 12px !important;}
+
+/* Smooth Text Animation */
+.animated-text {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInText 1.5s ease forwards;
+	
+}
+
+/* Sketchy Hand-Drawn Underline Effect */
+.neon-highlight {
+    position: relative;
+    text-decoration: none;
+    padding: 2px 4px;
+}
+
+/* The Hand-Drawn Sketchy Line */
+.neon-highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background: var(--underline-color); /* Uses dynamically set variable */
+    border-radius: 3px;
+    transform: skewX(-5deg);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover Effect: More Visible */
+.neon-highlight:hover::after {
+    transform: skewX(5deg) scale(1.1);
+    background: rgba(0, 0, 0, 0.2); /* Slightly darkens */
+}
+
+      .close-btn {
+             position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Ensures it stays on top */
+        }
+
+        .close-btn::before, .close-btn::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background: black;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+        }
+
+        .close-btn::before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .close-btn::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+	.researchtable, .testingtable {font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }	
+		.researchtable th:nth-child(1), .researchtable td:nth-child(1) { width: 40%; } /* Pain Point */
+.researchtable th:nth-child(2), .researchtable td:nth-child(2) { width: 20%; } /* AI Prediction */
+.researchtable th:nth-child(3), .researchtable td:nth-child(3) { width: 40%; } /* Distributor Confirmation */ 
+
+		/* Make smaller on mobile */
+@media (max-width: 768px) {
+    .close-btn {
+        width: 30px;  /* Smaller button */
+        height: 30px;
+        top: 5%;   /* Move closer to the top */
+        right: 10%; /* Move closer to the right */
+    }
+
+    .close-btn::before, .close-btn::after {
+        width: 15px; /* Reduce 'X' size */
+        height: 2px; /* Make 'X' thinner */
+    }
+}
+
+/* Text Animation - Letter by Letter */
+@keyframes fadeLetter {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* These are the sytles for the project content */
+
+.content-section{
+	padding:5%;
+	
+}
+   .left-panel {
+            display: flex;
+    align-items: flex-start; /* Adjust alignment */
+    justify-content: left;
+    padding-bottom: 0 !important; /* Ensure bottom padding is removed */
+    margin-bottom: 0; /* Remove margin if needed */
+        }
+		.left-panel h2 {    /* Ensure no space below */padding-top: 0 !important;
+    padding-bottom: 0 !important;}
+
+        .right-content {
+            padding-right: 5px;
+        }
+		.right-content p {
+ padding-right: 20%; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+    max-width: 80ch;
+    
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    word-spacing: 0.02em;
+}
+
+        .content-box {
+            
+            padding: 1px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content-box:hover {
+            transform: translateY(-5px);
+        }
+		
+		.rounded-responsive-img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px; /* Adjust the corner roundness */
+    display: block; /* Prevents inline spacing issues */
+    max-width: 100%; /* Ensures it doesn’t overflow */
+	    border: 1px solid #ccc;
+}
+.table-rounded{
+	
+	border-radius: 10px; /* Adjust the roundness */
+            overflow: hidden; /* Prevents borders from sticking out */
+            border-collapse: separate; /* Required for proper rounding */
+            border-spacing: 0; /* Ensures cells align properly */
+}
+     ..card-container {
+            width: 50%;
+        }
+        .result-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 18px;
+            border-bottom: 1px solid #ddd;
+            transition: transform 0.2s ease-in-out;
+            background: white;
+            cursor: pointer;
+        }
+        .result-card:hover {
+            transform: scale(1.02);
+        }
+        .result-icon {
+            font-size: 24px;
+        }
+        .result-content h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .result-content p {
+            margin: 4px 0 0;
+            font-size: 14px;
+            color: #555;
+        }
+		.highlight-box {
+            border-left: 4px solid #0cc0df;
+            background: #f8f9fa;
+            padding: 15px;
+          
+        }
+		.ash-icon {
+    color: #8B8C89; /* Ash gray */
+  }
+  	.black-icon {
+    color: #333333; /* Ash black */
+  }
+    	.blue-icon {
+    color: #0cc0df; /* Ash black */
+  }
+      .custom-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hide captions and controls by default */
+.custom-caption, .custom-control {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show captions and controls when hovering over the carousel */
+.custom-carousel:hover .custom-caption,
+.custom-carousel:hover .custom-control {
+    opacity: 1;
+}
+
+/* Adjust caption to be a full-width strip at the bottom */
+.custom-caption {
+	font-family: 'Montserrat', sans-serif;
+   position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);  /* Dark background */
+    padding: 8px;  /* Reduced padding */
+    color: white;
+    font-size: 14px;  /* Smaller font size */
+    font-weight: normal;  /* Optionally adjust weight */
+    border-top: 2px solid white;  /* Optional border */
+}
+
+/* Style for the carousel controls (arrows) */
+.custom-control {
+ position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 15px;
+    transition: background 0.3s ease;
+}
+
+.custom-control:hover {
+    
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Set the background color of the icons to black */
+    filter: invert(1); /* This inverts the color to make the icons themselves black */
+}
+
+/* Optional: Styling the buttons */
+.carousel-control-prev, 
+.carousel-control-next {
+    background-color: transparent; /* Removes the background color */
+    border: none; /* Optional: Remove any border */
+}
+
+		.container-wrapper {
+			font-family: 'Montserrat', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .flip-card {
+            width: 800px;
+            height: 180px;
+            perspective: 1000px;
+        }
+        .flip-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .flip-card:hover .flip-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-front, .flip-back {
+			font-size: 90%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            
+        }
+        .flip-front {
+           border: 2px solid #0cc0df;
+            color: Black;
+            padding: 20px;
+            text-align: center;
+        }
+        .flip-back {
+			
+            background: white;
+            color: #333;
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: center;
+            border: 2px solid green;
+        }
+		          /* Container */
+          /* Full-width container inside .col-9 */
+                /* Container */
+        .before-after-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+            margin: auto;
+            user-select: none;
+        }
+
+        /* Base Images */
+        .before-after-container img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Overlay for Before Image */
+        .before-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* ✅ FIX: Before Image Stays Fixed While Sliding */
+        .before-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600px;  /* ✅ Ensures No Movement */
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Slider Bar */
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #fff;
+            cursor: ew-resize;
+            z-index: 10;
+        }
+
+        /* Drag Handle */
+        .slider:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            border: 2px solid #000;
+            transform: translateY(-50%);
+        }
+		
+		@media (max-width: 768px) {
+   .left-panel {
+    padding: 0px !important; 
+    margin: 0px !important;
+    width: 100%; /* Ensure full width usage */
+}
+
+.row {
+    margin: 0px !important; /* Remove row margin */
+    padding: 0px !important; /* Remove row padding */
+}
+
+.container-fluid {
+    padding: 0px !important; /* Remove container padding */
+    margin: 0px !important; /* Remove container margin */
+}
+.right-content p {margin-top: 0 !important; padding-right: 0 !important;
+        font-size: 14px; /* Slightly smaller font for compact screens */
+        line-height: 1.8; /* More spacing for readability */
+        text-align: left; /* Left-align for better flow */
+        padding: 0 10px; /* Add side padding to avoid text touching edges */
+    }
+	.content-section{
+	
+	padding:5%;
+	
+}
+}
+
