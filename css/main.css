@@ -24,9 +24,9 @@
 @media (max-width: 600px) {
 
   .short-version {
-  margin-top:-20%;
+    margin-top:150%;
 }
-  .header {
+.header {
   height: auto !important;
   min-height: 100vh;
   padding-top: 80px; /* room for navbar */
