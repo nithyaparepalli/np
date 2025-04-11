@@ -246,7 +246,7 @@ p {
 }
 
 .header-wrapper {  
- margin-top:150px;
+ margin-top:250px;
 }
 
 .header-wrapper h1 {
@@ -1736,7 +1736,7 @@ footer h4 {
 /* Small Devices, Tablets */ 
     @media only screen and (max-width : 768px) {
         .header-wrapper {  
-          margin-top:200px;
+          margin-top:250px;
 		
         }
 	   
@@ -1770,7 +1770,7 @@ footer h4 {
 /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 	     .header-wrapper {  
-          margin-top:200px;
+          margin-top:250px;
 		
         }
         .navbar .navbar-nav>li>a {
@@ -1821,7 +1821,7 @@ footer h4 {
 
     @media only screen and (max-width : 375px) {
 	     .header-wrapper {  
-          margin-top:200px;
+          margin-top:250px;
 		
         }
         .preloader {
@@ -1867,7 +1867,7 @@ footer h4 {
 /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 	     .header-wrapper {  
-          margin-top:200px;
+          margin-top:250px;
 		
         }
         .preloader {
