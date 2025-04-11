@@ -24,8 +24,20 @@
 @media (max-width: 600px) {
 
   .short-version {
-    margin-top:90%;
-}}
+  margin-top:-2%;
+}
+  .header {
+  height: auto !important;
+  min-height: 100vh;
+  padding-top: 80px; /* room for navbar */
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  padding: 20px;
+}
+}
 .navbar-toggler {
   border: none !important;
   box-shadow: none !important;
