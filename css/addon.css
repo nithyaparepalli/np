@@ -1,3 +1,9 @@
+.textformatting{
+	height: auto;
+overflow: visible;
+}
+
+
 .textformatting p {
 	
 	font-family: 'Montserrat', sans-serif;
