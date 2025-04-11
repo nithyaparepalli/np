@@ -20,6 +20,12 @@
 
 
 /******** GENERAL SETTINGS SECTION START ********/
+
+@media (max-width: 600px) {
+
+  .short-version {
+    margin-top:90%;
+}}
 .navbar-toggler {
   border: none !important;
   box-shadow: none !important;
