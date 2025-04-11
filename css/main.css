@@ -20,7 +20,9 @@
 
 
 /******** GENERAL SETTINGS SECTION START ********/
-
+.navbar-toggler{
+	border: none !important;
+}
 html,
 body {
 	
@@ -1734,7 +1736,7 @@ footer h4 {
 /* Small Devices, Tablets */ 
     @media only screen and (max-width : 768px) {
         .header-wrapper {  
-          margin-top:150px;
+          margin-top:200px;
 		
         }
 	   
@@ -1768,7 +1770,7 @@ footer h4 {
 /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 	     .header-wrapper {  
-          margin-top:150px;
+          margin-top:200px;
 		
         }
         .navbar .navbar-nav>li>a {
@@ -1819,7 +1821,7 @@ footer h4 {
 
     @media only screen and (max-width : 375px) {
 	     .header-wrapper {  
-          margin-top:150px;
+          margin-top:200px;
 		
         }
         .preloader {
@@ -1865,7 +1867,7 @@ footer h4 {
 /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 	     .header-wrapper {  
-          margin-top:150px;
+          margin-top:200px;
 		
         }
         .preloader {
