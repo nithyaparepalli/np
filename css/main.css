@@ -20,6 +20,10 @@
 
 
 /******** GENERAL SETTINGS SECTION START ********/
+.list-group-item{
+	font-size:14px;
+}
+
 .navbar-toggler{
 	border: none !important;
 }
