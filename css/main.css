@@ -1738,13 +1738,9 @@ footer h4 {
 /* Small Devices, Tablets */ 
     @media only screen and (max-width : 768px) {
         .header-wrapper {  
-          -webkit-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          text-align: center;
+          margin-top:50px;
         }
+	   
         .navbar .navbar-nav>li>a {
             margin-left: 30px;
             margin-bottom: 15px;
