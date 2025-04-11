@@ -251,6 +251,8 @@ p {
 
 .header-wrapper {  
  margin-top:250px;
+	padding-left: 10%;
+padding-right: 10%;
 }
 
 .header-wrapper h1 {
