@@ -1,6 +1,6 @@
 .textformatting{
 	height: auto;
-overflow: visible;
+overflow: visible !important;
 }
 
 
@@ -412,6 +412,10 @@ overflow: visible;
         }
 		
 		@media (max-width: 768px) {
+			.textformatting{
+	height: auto;
+overflow: visible !important;
+}
    .left-panel {
     padding: 0px !important; 
     margin: 0px !important;
