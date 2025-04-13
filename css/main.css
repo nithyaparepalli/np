@@ -250,9 +250,9 @@ p {
 }
 
 .header-wrapper {  
- margin-top:250px;
-	padding-left: 10%;
-padding-right: 10%;
+ margin-top:200px;
+	padding-left: 20%;
+padding-right: 20%;
 }
 
 .header-wrapper h1 {
@@ -265,7 +265,7 @@ padding-right: 10%;
 }
 
 .header-wrapper h2 {
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: 300;
     letter-spacing: 4pt;
     color: #1b1b1b;
@@ -1742,7 +1742,7 @@ footer h4 {
 /* Small Devices, Tablets */ 
     @media only screen and (max-width : 768px) {
         .header-wrapper {  
-          margin-top:250px;
+          margin-top:200px;
 		
         }
 	   
@@ -1776,7 +1776,7 @@ footer h4 {
 /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 	     .header-wrapper {  
-          margin-top:250px;
+          margin-top:200px;
 		
         }
         .navbar .navbar-nav>li>a {
@@ -1827,7 +1827,7 @@ footer h4 {
 
     @media only screen and (max-width : 375px) {
 	     .header-wrapper {  
-          margin-top:250px;
+          margin-top:200px;
 		
         }
         .preloader {
@@ -1873,7 +1873,7 @@ footer h4 {
 /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 	     .header-wrapper {  
-          margin-top:250px;
+          margin-top:200px;
 		
         }
         .preloader {
